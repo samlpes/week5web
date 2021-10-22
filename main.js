@@ -8,8 +8,15 @@ function checker (a) {
     return message;
     } 
 
-let names = ['Hell', 'No', 'Fuck oFF'];
+let names = ['hello', 'no', 'oFF'];
 
-for(let i = 0; i < names.length; i++){
-    console.log(names[i])
+function reversing(names){
+    let revnames = []
+    for(let i = names.length-1; i>=0; i--){
+        revnames.push(names[i])
+    }
+    return revnames
+
 }
+
+console.log(reversing(names))
